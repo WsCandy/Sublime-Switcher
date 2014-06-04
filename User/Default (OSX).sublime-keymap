@@ -1,0 +1,7 @@
+[
+
+    {"keys" : ["command+3"], "command": "switch_window_js"},
+	{"keys" : ["command+1"], "command": "switch_window_normal"},
+	{"keys" : ["command+2"], "command": "switch_window_css"}
+
+]
