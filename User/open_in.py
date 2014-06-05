@@ -11,7 +11,7 @@ class file_open(sublime_plugin.EventListener):
 		if file_name.find('.js') > 0:
 			window.set_view_index(view, 1, 0)
 			window.focus_group(1)
-			window.run_command('set_layout', {
+			window.run_command('switch_window_js', {
 
 				"rows": [0.0, 0.02, 1.0],
 		        "cols": [0.0, 0.02, 1.0],
@@ -23,7 +23,7 @@ class file_open(sublime_plugin.EventListener):
 			
 			})
 
-		elif file_name.find('.scss') > 0 or file_name.find('.css') > 0:
+		elif file_name.find('.scss') > 0 or file_name.find('.css') > 0 or file_name.find('.less') > 0:
 			window.set_view_index(view, 0, 0)
 			window.focus_group(0)
 			window.run_command('set_layout', {
