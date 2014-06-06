@@ -8,7 +8,7 @@ class file_open(sublime_plugin.EventListener):
 		file_name = view.file_name()
 		window = view.window()
 
-		if file_name.find('.js') > 0 or file_name.find('.json'):
+		if file_name.find('.js') > 0 or file_name.find('.json') > 0:
 			window.set_view_index(view, 1, 0)
 			window.focus_group(1)
 			window.run_command('switch_window_js')
